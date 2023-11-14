@@ -1,0 +1,8 @@
+CAMERA
+
+ProjectionMatrix = Orthographic or Perspective mode. How big the screen will be
+x (multiply)
+ViewMatrix = LookAtMatrix = camera looking from. Where the camera is in relation to the world. Multiplication of coordinates matrix and a position vector
+x (multiply)
+aPos = Position of all objects on screen
+= NDC (Normalized Device Coordinates)
