@@ -19,12 +19,15 @@ void main()
 #type fragment
 #version 330 core
 
+uniform float uTime;
+
 in vec4 fColor;
 
 out vec4 color;
 
 void main()
 {
-    color = fColor;
+    float avg = (fColor.r + fColor.g + fColor.b) / 3; // black and white
+    color = sin(uTime) * vec4(avg, avg, avg, 1);
 }
 
